@@ -1,0 +1,5 @@
+---
+const optionsMD = await Astro.glob('../content/option.mdx');
+---
+
+{optionsMD.map(({ Content }) => <Content />)}
